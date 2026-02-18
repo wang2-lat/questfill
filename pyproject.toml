@@ -1,0 +1,20 @@
+[project]
+name = "questfill"
+version = "0.1.0"
+description = "自动填写企业安全合规问卷的 CLI 工具"
+requires-python = ">=3.8"
+dependencies = [
+    "typer>=0.9.0",
+    "pypdf>=3.17.0",
+    "python-docx>=1.1.0",
+    "openpyxl>=3.1.0",
+    "pyyaml>=6.0",
+    "rich>=13.7.0",
+]
+
+[project.scripts]
+questfill = "questfill.cli:app"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
